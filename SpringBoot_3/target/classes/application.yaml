@@ -1,0 +1,7 @@
+server:
+  port: 8888
+
+myapp:
+  name: Suraj_Korade
+  version: 1.1
+  description: This is for learning spring boot project
