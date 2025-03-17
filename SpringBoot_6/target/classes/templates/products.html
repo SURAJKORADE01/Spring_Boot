@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Products Details</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+
+        <tr th:each = "products: ${products}">
+            <td th:next = "${products.productID}}"></td>
+            <td th:next = "${products.productName}}"></td>
+            <td th:next = "${products.productPrice}}"></td>
+        </tr>
+    </table>
+</body>
+</html>
