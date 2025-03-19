@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<!--    SpringBoot is responsible to create the object  -->
+    <bean id="dev1" class="com.springboot_8.Dev" autowire="byName">
+<!--        This is called setter injection as property uses setter -->
+<!--        <property name="age" value="15"></property>-->
+
+<!--        Simply Autowired is DONE here -->
+<!--        <property name="laptop" ref="lap1"></property>-->
+
+<!--        <constructor-arg ref="lap1"/>-->
+
+<!--        <property name="computer" ref="desk1"></property>-->
+    </bean>
+
+    <bean id="dev2" class="com.springboot_8.Dev">
+<!--        <constructor-arg name = "age" value="20"></constructor-arg>-->
+
+<!--        If constructor has more than 1 parameters-->
+<!--        <constructor-arg index="0" value="20"></constructor-arg>-->
+<!--        <constructor-arg index="1" value="200"></constructor-arg>-->
+
+    </bean>
+
+    <bean id="com" class="com.springboot_8.Laptop"></bean>
+
+    <bean id="desk1" class="com.springboot_8.Desktop"></bean>
+
+</beans>
